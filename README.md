@@ -1,2 +1,16 @@
-# OEE-Dashboard
-An Overall Equipment Effectiveness Dashboard, that can help Process Engineers to get insights on OEE effectiveness and keep a track of the progess over the definite period of time.
+# OEE Dashboard
+
+Interactive dashboard to calculate **Availability, Performance, Quality, and OEE**.
+
+## Features
+- KPI metrics with color indicators
+- Gauge chart with steps
+- Historical trends
+- Daily log with save functionality
+
+## Tech Stack
+- Python, Streamlit, Plotly, Pandas, NumPy
+
+## Live Demo
+Deploy on Streamlit Cloud for interactive demo.
+
