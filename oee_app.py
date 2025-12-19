@@ -275,7 +275,7 @@ with tab3:
 
 # --- TAB 4: Export Data ---
 with tab4:
-    st.markdown("#### Export OEE Log")
+     st.markdown("#### Export OEE Log")
 
     if "log" in st.session_state and len(st.session_state.log) > 0:
         export_df = st.session_state.log.copy()
@@ -283,16 +283,14 @@ with tab4:
 
         csv = export_df.to_csv(index=False).encode("utf-8")
         st.download_button(
-            "Download CSV",
-            csv,
-            "oee_log.csv",
-            "text/csv",
+            label="Download CSV",
+            data=csv,
+            file_name="oee_log.csv",
+            mime="text/csv"
         )
         st.caption("Exports the stored log (Availability, Performance, Quality, OEE).")
     else:
         st.info("No data available yet. Save entries in the Daily Log first.")
 
-    else:
-        st.info("No data available yet.")
 
 
