@@ -1,4 +1,4 @@
-Now edit this code to make dashboard more appealing, professioanl dont add too many  emojis and all, clean but color coded, my code: import streamlit as st
+import streamlit as st
 import pandas as pd
 import numpy as np
 import datetime
@@ -116,4 +116,5 @@ with tab4:
         )
     else:
         st.info("No data available yet.")
+
 
